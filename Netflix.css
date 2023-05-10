@@ -10,6 +10,7 @@
   }
 body {
     background-color: black;
+    overflow-x: hidden;
 }
 .buttonNav {
     border-radius: 0px;
@@ -18,6 +19,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.buttons span {
+    border: 1px solid white;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .logo {
     width: 85px;
@@ -38,6 +47,10 @@ body {
 .row-gutter {
     --bs-gutter-x: 0.5rem;
   }
+.icone {
+    color: white;
+    width: 150px;
+}
 
 /* footer */
 footer {
@@ -70,4 +83,26 @@ ul li {
 }
 .date {
     font-size: 10px;
+}
+img {
+    transition: 0.3s;
+  }
+.row img {
+    animation: opacity 5s;
+}
+  
+img:hover {
+    transform: scale(1.15);
+    z-index: 2;
+  }
+ 
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity:1;
+    }
+    
 }
