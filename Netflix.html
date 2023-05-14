@@ -20,6 +20,7 @@
 
 <body>
     <header>
+        <!-- Modifiche apportate alla NavBar: annullato l'effetto hover degli elementi "a" e reso tutti gli elementi della lista cliccabili. -->
         <nav class="navbar navbar-expand-lg body">
             <div class="container-fluid mx-4">
                 <img src="assets/imgs/Netflix_Logo_RGB.png" alt="Netflix" class="logo">
@@ -35,10 +36,10 @@
                             <a class="nav-link" href="#">Movies</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link">Recently Added</a>
+                            <a class="nav-link" href="#">Recently Added</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link">My List</a>
+                            <a class="nav-link" href="#">My List</a>
                         </li>
                     </ul>
                 </div>
@@ -51,14 +52,28 @@
             </div>
         </nav>
     </header>
-
+     <!-- Main part suddivisa in tre row. Responsività: col-6 col-md-4 col-lg-2 -->
     <div class="container-fluid mt-4 mx-4">
         <div class="row row-gx-2">
             <div class="d-flex align-items-center gap-4">
                 <h3 class="text-light no-wrap">TV SHOW</h3>
                 <button class="btn btn-dark text-light buttonNav" type="button">Genres</button>
+                <!-- div che conterrà una lista di generi. JS -->
+                <div class="d-flex p-2 justify-content-center divjs">
+                    <ul>
+                        <li>Comedy</li>
+                        <li>Drama</li>
+                        <li>Science Fiction</li>
+                        <li>Romance</li>
+                    </ul>
+                    <ul class="me-3">
+                        <li>Horror</li>
+                        <li>Historical</li>
+                        <li>Fantasy</li>
+                        <li>Crime</li>
+                    </ul>
+                </div>
 
-                <!-- bottoni laterali da finire. Non reiesco a cambiare colore alle icone -->
                 <div class="buttons d-flex ms-auto me-5">
                     <span class="material-symbols-outlined icone">
                        menu
@@ -68,8 +83,7 @@
                     </span>
                 </div>
             </div>
-                <h5 class="text-light my-3">Trending Now</h5>
-                
+                <h5 class="text-light my-3">Trending Now</h5>            
                 <div class="col-6 col-md-4 col-lg-2">
                     <img src="assets/imgs/movies/1.png" alt="film1" class="immageSiz">
                 </div>
@@ -87,15 +101,8 @@
                 </div>
                 <div class="col-6 col-md-4 col-lg-2">
                     <img src="assets/imgs/movies/6.png" alt="film6" class="immageSiz">
-                </div>
-            
+                </div>           
         </div>
-
-
-
-
-
-
 
         <div class="row mt-4 row-gx-2">
             <h5 class="text-light my-3">Watch it Again</h5>
@@ -119,9 +126,6 @@
             </div>
         </div> 
 
-
-
-
         <div class="row mt-4 row-gx-2">
             <h5 class="text-light my-3">New Releases</h5>
             <div class="col-6 col-md-4 col-lg-2">
@@ -144,6 +148,7 @@
             </div>
         </div>
     </div>
+    <!-- Intestazioni finali suddivise in due row. Responsività: col-6 col-md-4 col-lg-2 -->
     <footer>
         <div class="container mt-5">
             <div class="row">
