@@ -43,7 +43,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="d-flex justify-content-end align-items-center gap-3">
+                <div class="d-flex justify-content-end align-items-center gap-3 pointer">
                     <i class="fa-sharp fa-solid fa-magnifying-glass text-light"></i>
                     <span class="text-light">Kids</span>
                     <i class="fa-regular fa-bell text-light"></i>
@@ -52,107 +52,106 @@
             </div>
         </nav>
     </header>
-     <!-- Main part suddivisa in tre row. Responsività: col-6 col-md-4 col-lg-2 -->
-    <div class="container-fluid mt-4 mx-4">
-        <div class="row row-gx-2">
-            <div class="d-flex align-items-center gap-4">
-                <h3 class="text-light no-wrap">TV SHOW</h3>
-                <button class="btn btn-dark text-light buttonNav" type="button">Genres</button>
-                <!-- div che conterrà una lista di generi. JS -->
-                <div class="d-flex p-2 justify-content-center divjs">
-                    <ul>
-                        <li>Comedy</li>
-                        <li>Drama</li>
-                        <li>Science Fiction</li>
-                        <li>Romance</li>
-                    </ul>
-                    <ul class="me-3">
-                        <li>Horror</li>
-                        <li>Historical</li>
-                        <li>Fantasy</li>
-                        <li>Crime</li>
-                    </ul>
-                </div>
 
-                <div class="buttons d-flex ms-auto me-5">
+
+     <!-- Main part suddivisa in tre Container in modo tale da poter gestire meglio la disposizione dei contenuti. Responsività: col-6 col-md-4 col-lg-2 -->
+        <div class="container-fluid mt-4 mx-4">
+            <div class="row row-gx-2">
+                    <div class="d-flex align-items-center gap-4">
+                        <h3 class="text-light no-wrap">TV SHOW</h3>
+                        <!-- dropdown botton in riferimento al bottone "genre" -->
+                        <div class="dropdown">
+                            <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Genre
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Commedy</a></li>
+                                <li><a class="dropdown-item" href="#">Horror</a></li>
+                                <li><a class="dropdown-item" href="#">Romance</a></li>
+                                <li><a class="dropdown-item" href="#">Drama</a></li>
+                            </ul>
+                        </div>
+                <div class="buttons d-flex ms-auto me-5 pointer">
                     <span class="material-symbols-outlined icone">
                        menu
                     </span>
-                    <span class="material-symbols-outlined icone">
+                    <span class="material-symbols-outlined icone pointer">
                         apps
                     </span>
                 </div>
             </div>
-                <h5 class="text-light my-3">Trending Now</h5>            
+            <h5 class="text-light my-3">Trending Now</h5>            
                 <div class="col-6 col-md-4 col-lg-2">
-                    <img src="assets/imgs/movies/1.png" alt="film1" class="immageSiz">
+                    <img src="assets/imgs/movies/1.png" alt="film1" class="imageSize">
                 </div>
                 <div class="col-6 col-md-4 col-lg-2">
-                    <img src="assets/imgs/movies/2.png" alt="film2" class="immageSiz">
+                    <img src="assets/imgs/movies/2.png" alt="film2" class="imageSize">
                 </div>
                 <div class="col-6 col-md-4 col-lg-2">
-                    <img src="assets/imgs/movies/3.png" alt="film3" class="immageSiz">
+                    <img src="assets/imgs/movies/3.png" alt="film3" class="imageSize">
                 </div>
                 <div class="col-6 col-md-4 col-lg-2">
-                    <img src="assets/imgs/movies/4.png" alt="film4" class="immageSiz">
+                    <img src="assets/imgs/movies/4.png" alt="film4" class="imageSize imageSize-mt">
                 </div>
                 <div class="col-6 col-md-4 col-lg-2">
-                    <img src="assets/imgs/movies/5.png" alt="film5" class="immageSiz">
+                    <img src="assets/imgs/movies/5.png" alt="film5" class="imageSize imageSize-mt">
                 </div>
                 <div class="col-6 col-md-4 col-lg-2">
-                    <img src="assets/imgs/movies/6.png" alt="film6" class="immageSiz">
+                    <img src="assets/imgs/movies/6.png" alt="film6" class="imageSize imageSize-mt">
                 </div>           
+             </div>
         </div>
-
-        <div class="row mt-4 row-gx-2">
-            <h5 class="text-light my-3">Watch it Again</h5>
-            <div class="col-6 col-md-4 col-lg-2">
-                <img src="assets/imgs/movies/7.png" alt="film1" class="immageSiz">
-            </div>
-            <div class="col-6 col-md-4 col-lg-2">
-                <img src="assets/imgs/movies/8.png" alt="film2" class="immageSiz">
-            </div>
-            <div class="col-6 col-md-4 col-lg-2">
-                <img src="assets/imgs/movies/9.png" alt="film3" class="immageSiz">
-            </div>
-            <div class="col-6 col-md-4 col-lg-2">
-                <img src="assets/imgs/movies/10.png" alt="film4" class="immageSiz">
-            </div>
-            <div class="col-6 col-md-4 col-lg-2">
-                <img src="assets/imgs/movies/11.png" alt="film5" class="immageSiz">
-            </div>
-            <div class="col-6 col-md-4 col-lg-2">
-                <img src="assets/imgs/movies/12.png" alt="film6" class="immageSiz">
-            </div>
+        <div class="container-fluid mt-4 mx-4">
+            <div class="row mt-4">
+                <h5 class="text-light my-3">Watch it Again</h5>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <img src="assets/imgs/movies/7.png" alt="film1" class="imageSize">
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <img src="assets/imgs/movies/8.png" alt="film2" class="imageSize">
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <img src="assets/imgs/movies/9.png" alt="film3" class="imageSize">
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <img src="assets/imgs/movies/10.png" alt="film4" class="imageSize imageSize-mt">
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <img src="assets/imgs/movies/11.png" alt="film5" class="imageSize imageSize-mt">
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <img src="assets/imgs/movies/12.png" alt="film6" class="imageSize imageSize-mt">
+                </div>
+            </div> 
         </div> 
-
-        <div class="row mt-4 row-gx-2">
-            <h5 class="text-light my-3">New Releases</h5>
-            <div class="col-6 col-md-4 col-lg-2">
-                <img src="assets/imgs/movies/13.png" alt="film1" class="immageSiz">
-            </div>
-            <div class="col-6 col-md-4 col-lg-2">
-                <img src="assets/imgs/movies/14.png" alt="film2" class="immageSiz">
-            </div>
-            <div class="col-6 col-md-4 col-lg-2">
-                <img src="assets/imgs/movies/15.png" alt="film3" class="immageSiz">
-            </div>
-            <div class="col-6 col-md-4 col-lg-2">
-                <img src="assets/imgs/movies/16.png" alt="film4" class="immageSiz">
-            </div>
-            <div class="col-6 col-md-4 col-lg-2">
-                <img src="assets/imgs/movies/17.png" alt="film5" class="immageSiz">
-            </div>
-            <div class="col-6 col-md-4 col-lg-2">
-                <img src="assets/imgs/movies/18.png" alt="film6" class="immageSiz">
+        <div class="container-fluid mt-4 mx-4">
+            <div class="row mt-4">
+                <h5 class="text-light my-3">New Releases</h5>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <img src="assets/imgs/movies/13.png" alt="film1" class="imageSize">
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <img src="assets/imgs/movies/14.png" alt="film2" class="imageSize">
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <img src="assets/imgs/movies/15.png" alt="film3" class="imageSize">
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <img src="assets/imgs/movies/16.png" alt="film4" class="imageSize imageSize-mt">
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <img src="assets/imgs/movies/17.png" alt="film5" class="imageSize imageSize-mt">
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <img src="assets/imgs/movies/18.png" alt="film6" class="imageSize imageSize-mt">
+                </div>
             </div>
         </div>
-    </div>
-    <!-- Intestazioni finali suddivise in due row. Responsività: col-6 col-md-4 col-lg-2 -->
+    <!-- Intestazioni finali contenute all'interno di una row. Responsività: col-6 col-md-4 col-lg-2 -->
     <footer>
         <div class="container mt-5">
-            <div class="row">
-                <div class="col-6 col-md-4 col-lg-2">
+                <!-- Div che contiene i loghi social  -->
+                <div>
                     <ul class="d-flex align-items-center gap-3">
                         <li class="nav-items ">
                             <i class="fab fa-facebook"></i>
@@ -167,10 +166,10 @@
                             <i class="fab fa-youtube"></i>
                         </li>
                     </ul>
-
                 </div>
-            </div>
-            <div class="row gap-5">
+               
+           
+            <div class="row gap-5 pointer">
                 <div class="col-6 col-md-4 col-lg-2 d-flex gap-3 ">
                     <ul class=" foot-list text-light ">
                         <li>Audio and subtitles</li>
@@ -208,8 +207,6 @@
                     </ul>
                 </div>
             </div>
-
-
         </div>
         </div>
     </footer>

@@ -3,12 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* modifiche colori nav bar */
+
+/* modifiche nav bar */
+
 .navbar-nav li a{
     color: white !important;
 }
+.pointer {
+    cursor: pointer;
+}
 
 /* main part */
+
 .no-wrap {
     white-space: nowrap;
   }
@@ -32,12 +38,11 @@ body {
     justify-content: center;
     align-items: center;
 }
-.divjs {
-    background-color: antiquewhite;
-    border-radius: 25px;
-}
 .logo {
     width: 85px;
+}
+h5 {
+    animation: opacity 5s;
 }
 .imgNav {
     width: 45px;
@@ -49,8 +54,9 @@ body {
     margin: auto;
   }
 
-.immageSiz {
+.imageSize {
     width: 100% !important;
+    
 }
 .row-gutter {
     --bs-gutter-x: 0.5rem;
@@ -60,7 +66,8 @@ body {
     width: 150px;
 }
 
-/* footer */
+/* FOOTER */
+
 footer {
     margin: auto;
     width: 50%;
@@ -92,6 +99,9 @@ ul li {
 .date {
     font-size: 10px;
 }
+
+
+/* transazioni e animazioni delle immagini. */
 .row img {
     transition: 0.3s;
     animation: opacity 5s;
@@ -100,13 +110,26 @@ ul li {
     transform: scale(1.15);
     z-index: 2;
   }
+
+
+
+/* keyframes che permette di far apparire le immagini con un leggero ritardo attraverso il cambio di stato di opacità */
 @keyframes opacity {
     from {
         opacity: 0;
     }
     to {
         opacity:1;
-    }
-    
+    }   
 }
+/* //mediaquery per mantenere un margine top in sm-xs  */
+@media (max-width: 992px) {
+    .imageSize-mt {
+      margin-top: 15px;
+    }
+  }
 
+
+
+
+  
